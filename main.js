@@ -46,8 +46,8 @@
  }
  *
  */
-var screenWidth = 1000;
-var screenHeight = 800;
+var screenWidth = 1100;
+var screenHeight = 900;
 
 cc.game.onStart = function () {
   cc.view.adjustViewPort(true);
