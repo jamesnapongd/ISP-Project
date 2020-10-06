@@ -46,17 +46,20 @@
  }
  *
  */
-var screenWidth = 800;      
-var screenHeight = 600;
+var screenWidth = 1000;
+var screenHeight = 800;
 
-cc.game.onStart = function(){
-    cc.view.adjustViewPort(true);
-    cc.view.setDesignResolutionSize(800, 600, cc.ResolutionPolicy.SHOW_ALL);
-    cc.view.setDesignResolutionSize(1800, 1600, cc.ResolutionPolicy.SHOW_ALL);
-    cc.view.resizeWithBrowserSize(true);
-    //load resources
-    cc.LoaderScene.preload(g_resources, function () {
-        cc.director.runScene(new StartScene());
-    }, this);
+cc.game.onStart = function () {
+  cc.view.adjustViewPort(true);
+  cc.view.setDesignResolutionSize(1000, 800, cc.ResolutionPolicy.SHOW_ALL);
+  cc.view.resizeWithBrowserSize(true);
+  //load resources
+  cc.LoaderScene.preload(
+    g_resources,
+    function () {
+      cc.director.runScene(new StartScene());
+    },
+    this
+  );
 };
 cc.game.run();
