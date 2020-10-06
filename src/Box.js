@@ -6,7 +6,7 @@ var Box = cc.Sprite.extend({
         this.nextMove = Box.DIR.STILL;
         this.jump = Box.DIR.STILL;
         this.nextJump = Box.DIR.STILL;
-        this.vy = 15;
+        this.vy = 20;
         this.isStart = false;
         this.gameOver = false;
     },
@@ -32,9 +32,6 @@ var Box = cc.Sprite.extend({
         this.vy += -1;
         */
 
-       
-
-
     },
 
     setNextMove: function( move ) {
@@ -47,7 +44,7 @@ var Box = cc.Sprite.extend({
     },
     
     jumping: function() {
-        this.vy = 15;
+        this.vy = 20;
     },
 
     over: function(){
@@ -66,7 +63,7 @@ Box.DIR = {
  };
 
 Box.G = -0.7;
-Box.STARTING_VELOCITY = 15;
-Box.JUMPING_VELOCITY = 15;
+Box.STARTING_VELOCITY = 20;
+Box.JUMPING_VELOCITY = 20;
 
  
