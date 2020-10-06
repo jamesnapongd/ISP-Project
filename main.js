@@ -46,12 +46,12 @@
  }
  *
  */
-var screenWidth = 1000;
-var screenHeight = 800;
+var screenWidth = 1100;
+var screenHeight = 900;
 
 cc.game.onStart = function () {
   cc.view.adjustViewPort(true);
-  cc.view.setDesignResolutionSize(1000, 800, cc.ResolutionPolicy.SHOW_ALL);
+  cc.view.setDesignResolutionSize(1100, 900, cc.ResolutionPolicy.SHOW_ALL);
   cc.view.resizeWithBrowserSize(true);
   //load resources
   cc.LoaderScene.preload(
