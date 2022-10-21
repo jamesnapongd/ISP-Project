@@ -23,6 +23,10 @@ var Floor = cc.Node.extend({
     getYPos: function() {
         return this.getPosition().y;
     },
+	
+    getZPos: function() {
+    	return this.getPosition().Z;
+    },
 
     isBoxOnFloor: function( Box ) {
         return cc.rectIntersectsRect( Box.getPlayerRectFoot(), this.getBuildingRect() );
