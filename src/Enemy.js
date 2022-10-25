@@ -61,9 +61,11 @@ var Enemy = cc.Sprite.extend({
     walk: function(){
     	var pos = this.getPosition();
     	if( this.direction == Enemy.DIR.RIGHT )
-    		this.setPosition( new cc.Point( pos.x + Enemy.MOVE_X , pos.y ) );
+    		this.setPosition( new cc.Point( pos.x + Enemy.MOVE_X , pos.x ) );
     	else if( this.direction == Enemy.DIR.LEFT )
     		this.setPosition( new cc.Point( pos.x - Enemy.MOVE_X , pos.y ) );
+	else if( this.direction == Enemy.DIR.LEFT )
+    		this.setPosition( new cc.Point( pos.z - Enemy.MOVE_Y , pos.z ) );
     }
 
 	
