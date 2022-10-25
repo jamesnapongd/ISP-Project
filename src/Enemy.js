@@ -63,9 +63,9 @@ var Enemy = cc.Sprite.extend({
     	if( this.direction == Enemy.DIR.RIGHT )
     		this.setPosition( new cc.Point( pos.x + Enemy.MOVE_X , pos.x ) );
     	else if( this.direction == Enemy.DIR.LEFT )
-    		this.setPosition( new cc.Point( pos.x - Enemy.MOVE_X , pos.y ) );
+    		this.setPosition( new cc.Point( pos.x - Enemy.MOVE_Y , pos.y ) );
 	else if( this.direction == Enemy.DIR.LEFT )
-    		this.setPosition( new cc.Point( pos.z - Enemy.MOVE_Y , pos.z ) );
+    		this.setPosition( new cc.Point( pos.z - Enemy.MOVE_Z , pos.z ) );
     }
 
 	
@@ -80,6 +80,7 @@ Enemy.DIR = {
 
 Enemy.MOVE_X = 20;
 Enemy.MOVE_Y = 50;
+Enemy.MOVE_Z = 150;
 Enemy.CHANGEDIRECTION = 1;
 
 var checkUpDown = true;
